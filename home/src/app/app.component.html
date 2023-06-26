@@ -10,9 +10,8 @@
     <link rel="stylesheet" href="">
   </head>
   <body>
-    
     <div>
-    <h1>{{ title }}</h1>
+    <h1 class="title">{{ title }}</h1>
     <h2>
       {{allCards.length}}
       <span *ngIf="allCards.length === 1; else elseBlock">card</span>
@@ -21,26 +20,12 @@
     
     <ul  class="allCard">
       <li *ngFor="let i of allCards" >
-        <app-card class="card" (remove)="remove(i)" [card]="i"></app-card>
+        <app-card class="card" [card]="i"></app-card>
       </li>
     </ul>
     </div>
 
-    <input
-    #newCardTitle
-    placeholder="add a Card's title"
-    (keyup.enter)="addCard(newCardTitle.value,newCardDescription.value); newCardTitle.value = ''"
-    class="lg-text-input"
-    id="addcardInputTitle" />
-    <input
-  #newCardDescription
-  placeholder="add an Card's description"
- (keyup.enter)="addCard(newCardTitle.value,newCardDescription.value); newCardDescription.value = ''"
-  class="lg-text-input"
-  id="addcardInputDescription" />
-
-
-  <button class="btn-primary" (click)="addCard(newCardTitle.value,newCardDescription.value)">Add</button>
+ 
 
 <!-- <button class="btn-primary" (click)="addcard(newcard.value)">Add</button>
  -->

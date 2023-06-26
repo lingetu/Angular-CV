@@ -10,6 +10,13 @@
   align-items: center;
 
 }
+.title{
+ margin-top: 50px;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+}
 
 .btn-wrapper {
   margin-top: 1rem;
