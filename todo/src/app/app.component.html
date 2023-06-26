@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    
+    <div>
+    <h1>{{ title }}</h1>
+    <h2>
+      {{allCards.length}}
+      <span *ngIf="allCards.length === 1; else elseBlock">card</span>
+      <ng-template #elseBlock>cards</ng-template>
+    </h2>
+    
+    <ul  class="allCard">
+      <li *ngFor="let i of allCards" >
+        <app-card class="card" (remove)="remove(i)" [card]="i"></app-card>
+      </li>
+    </ul>
+    </div>
+
+    <input
+    #newCardTitle
+    placeholder="add a Card's title"
+    (keyup.enter)="addCard(newCardTitle.value,newCardDescription.value); newCardTitle.value = ''"
+    class="lg-text-input"
+    id="addcardInputTitle" />
+    <input
+  #newCardDescription
+  placeholder="add an Card's description"
+ (keyup.enter)="addCard(newCardTitle.value,newCardDescription.value); newCardDescription.value = ''"
+  class="lg-text-input"
+  id="addcardInputDescription" />
+
+
+  <button class="btn-primary" (click)="addCard(newCardTitle.value,newCardDescription.value)">Add</button>
+
+<!-- <button class="btn-primary" (click)="addcard(newcard.value)">Add</button>
+ -->
+
+<!-- Buttons that show all, still to do, or done cards on click -->
+<div class="btn-wrapper" >
+  <button
+    class="btn btn-menu"
+    [class.active]="filter === 'all'"
+    (click)="filter = 'all'">
+    All
+  </button>
+
+  <button
+    class="btn btn-menu"
+    [class.active]="filter === 'active'"
+    (click)="filter = 'active'">
+    To Do
+  </button>
+
+  <button
+    class="btn btn-menu"
+    [class.active]="filter === 'done'"
+    (click)="filter = 'done'">
+    Done
+  </button>
+</div>
+
+<!-- <h2>{{cards.length}} card(s)</h2>
+         <ul>... -->
+
+
+  </body>
+</html>
