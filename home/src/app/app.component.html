@@ -12,18 +12,49 @@
   <body>
     <div>
     <h1 class="title">{{ title }}</h1>
-    <h2>
-      {{allCards.length}}
-      <span *ngIf="allCards.length === 1; else elseBlock">card</span>
-      <ng-template #elseBlock>cards</ng-template>
-    </h2>
-    
+    <hr>
+    <h1 class="title">Qui je suis </h1>
+    <hr>
+    <h1 class="title">Mes projets</h1>
     <ul  class="allCard">
       <li *ngFor="let i of allCards" >
         <app-card class="card" [card]="i"></app-card>
       </li>
     </ul>
+    <div class="btn-wrapper" >
+      <button
+        class="btn btn-menu"
+        [class.active]="filter === 'all'"
+        (click)="filter = 'all'">
+        All
+      </button>
+    
+      <button
+        class="btn btn-menu"
+        [class.active]="filter === 'active'"
+        (click)="filter = 'active'">
+        To Do
+      </button>
+    
+      <button
+        class="btn btn-menu"
+        [class.active]="filter === 'done'"
+        (click)="filter = 'done'">
+        Done
+      </button>
     </div>
+    <hr>
+    <h1 class="title">Me contacter</h1>
+    <h2>
+
+      {{allCards.length}}
+      <span *ngIf="allCards.length === 1; else elseBlock">card</span>
+      <ng-template #elseBlock>cards</ng-template>
+    </h2>
+    
+    
+    </div>
+   
 
  
 
@@ -31,32 +62,10 @@
  -->
 
 <!-- Buttons that show all, still to do, or done cards on click -->
-<div class="btn-wrapper" >
-  <button
-    class="btn btn-menu"
-    [class.active]="filter === 'all'"
-    (click)="filter = 'all'">
-    All
-  </button>
 
-  <button
-    class="btn btn-menu"
-    [class.active]="filter === 'active'"
-    (click)="filter = 'active'">
-    To Do
-  </button>
 
-  <button
-    class="btn btn-menu"
-    [class.active]="filter === 'done'"
-    (click)="filter = 'done'">
-    Done
-  </button>
-</div>
-
-<!-- <h2>{{cards.length}} card(s)</h2>
-         <ul>... -->
 
 
   </body>
+  
 </html>

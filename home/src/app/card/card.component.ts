@@ -13,16 +13,12 @@ import { MatCardModule }  from '@angular/material/card';
 
 
 export class CardComponent {
-  editable = false;
+
 
   @Input() card!: Card;
   @Output() remove = new EventEmitter<Card>();
   
 
-  savecard(title: string ,description: string) {
-    if (!description || !title) return;
-    this.editable = false;
-    this.card.description = description;
-  }
+ 
 
 }

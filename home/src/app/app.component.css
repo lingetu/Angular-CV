@@ -5,7 +5,7 @@
   overflow-x: auto;
   width: auto;
 
-  min-height: 500px;
+  min-height: 750px;
 
   align-items: center;
 
@@ -17,10 +17,23 @@
   padding: 1rem;
   text-align: center;
 }
+.colorBleuemarine{
+  background-color: #2f435e;
+}
+.colorBleuegris{
+  background-color: #44566c;
+}
+.colorblancassé{
+  background-color: #ececec
+}
+.colorgris{
+  background-color: #4b5e65;
+}
 
 .btn-wrapper {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+  width: 100%;
 }
 .active{
   background-color: green;
@@ -61,6 +74,21 @@ ul li {
   list-style: none;
 }
 
+
+.product-item {
+  .product-item-content {
+      border: 1px solid var(--surface-d);
+      border-radius: 3px;
+      margin: .3rem;
+      text-align: center;
+      padding: 2rem 0;
+  }
+
+  .product-image {
+      width: 50%;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+  }
+}
     
   
   

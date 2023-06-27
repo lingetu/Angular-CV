@@ -5,12 +5,37 @@
   background-color: blueviolet;
   
  
-  min-height: 350px;
-  max-height: 400px;
+ height: 700px;
 
-  max-width: 400px;
-  min-width: 300px;
+ width: 500px;
 
+}
+.cardStateDone{
+background-color: green;
+position: relative;
+height: 25px;
+margin-top: 275px;
+width: 100%;
+
+display: block;
+}
+.cardStateDoing{
+background-color: orange;
+position: relative;
+height: 25px;
+margin-top: 275px;
+width: 100%;
+
+display: block;
+}
+.cardStateTodo{
+background-color: grey;
+position: relative;
+height: 25px;
+margin-top: 275px;
+width: 100%;
+
+display: block;
 }
 .btn-footer
 {
