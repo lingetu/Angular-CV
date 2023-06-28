@@ -11,17 +11,18 @@
       </p>
     </mat-card-content>
    <mat-card-footer>
-    
+    <div *ngIf="card.state==='true'" class="cardStateDone">
+     
+    </div>
+    <div *ngIf="card.state==='doing'" class="cardStateDoing">
+      
+    </div>
+    <div *ngIf="card.state==='false'" class="cardStateTodo">
+    </div>
    </mat-card-footer>
-   <div *ngIf="card.state==='true'" class="cardStateDone">
-     
-   </div>
-   <div *ngIf="card.state==='doing'" class="cardStateDoing">
-     
-   </div>
-   <div *ngIf="card.state==='false'" class="cardStateTodo">
+   
     
-   </div>
+  
 </mat-card>
 
 

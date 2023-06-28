@@ -1,71 +1,79 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
-  </head>
-  <body>
-    <div>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+</head>
+
+<body>
+  
     <h1 class="title">{{ title }}</h1>
     <hr>
     <h1 class="title">Qui je suis </h1>
     <hr>
     <h1 class="title">Mes projets</h1>
-    <ul  class="allCard">
-      <li *ngFor="let i of allCards" >
-        <app-card class="card" [card]="i"></app-card>
-      </li>
-    </ul>
-    <div class="btn-wrapper" >
-      <button
-        class="btn btn-menu"
-        [class.active]="filter === 'all'"
-        (click)="filter = 'all'">
+    <ngb-carousel>
+      <ng-template ngbSlide >
+        <div class="carousel-captions">
+          <app-card class="card" [card]="allCards[0]"></app-card>
+      </div>
+      </ng-template>
+      <ng-template ngbSlide >
+        <div class="carousel-captions">
+          <app-card class="card" [card]="allCards[1]"></app-card>
+      </div>
+      </ng-template>
+      <ng-template ngbSlide >
+        <div class="carousel-captions">
+          <app-card class="card" [card]="allCards[2]"></app-card>
+      </div>
+      </ng-template>
+      <ng-template ngbSlide >
+        <div class="carousel-captions">
+          <app-card class="card" [card]="allCards[3]"></app-card>
+      </div>
+      </ng-template>
+      <ng-template ngbSlide >
+        <div class="carousel-captions">
+          <app-card class="card" [card]="allCards[4]"></app-card>
+      </div>
+      </ng-template>
+    </ngb-carousel>
+    <div class="btn-wrapper">
+
+
+
+
+
+      <button class="btn btn-menu" [class.active]="filter === 'all'" (click)="filter = 'all'">
         All
       </button>
-    
-      <button
-        class="btn btn-menu"
-        [class.active]="filter === 'active'"
-        (click)="filter = 'active'">
+
+      <button class="btn btn-menu" [class.active]="filter === 'active'" (click)="filter = 'active'">
         To Do
       </button>
-    
-      <button
-        class="btn btn-menu"
-        [class.active]="filter === 'done'"
-        (click)="filter = 'done'">
+
+      <button class="btn btn-menu" [class.active]="filter === 'done'" (click)="filter = 'done'">
         Done
       </button>
     </div>
     <hr>
     <h1 class="title">Me contacter</h1>
-    <h2>
 
-      {{allCards.length}}
-      <span *ngIf="allCards.length === 1; else elseBlock">card</span>
-      <ng-template #elseBlock>cards</ng-template>
-    </h2>
-    
-    
-    </div>
    
+
+
+
 
  
 
-<!-- <button class="btn-primary" (click)="addcard(newcard.value)">Add</button>
- -->
 
-<!-- Buttons that show all, still to do, or done cards on click -->
+</body>
 
-
-
-
-  </body>
-  
 </html>

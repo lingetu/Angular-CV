@@ -1,10 +1,4 @@
 import { Component } from '@angular/core';
-import { Link } from './link';
-
-import { Card } from './card';
-
-import {MatCardModule} from '@angular/material/card';
-import { CarouselModule } from 'primeng/carousel';
 
 @Component({
   selector: 'app-root',
@@ -21,24 +15,24 @@ export class AppComponent {
 
   allCards = [
     {
-      title: 'TODO App in Angular',
-      description: 'Create a TODO App in Angular',
-      state: "true",
-    },
-    {
-      title: 'TODO App in Angular',
-      description: 'Create a TODO App in Angular',
-      state: "true",
+      title:'Create a website CV in angular',
+      description:'Create a website CV in angular',
+      state:"false",
     },
     {
       title:'Create a website CV in angular',
       description:'Create a website CV in angular',
-      state:"doing",
+      state:"false",
     },
     {
-      title: 'Cards in angular',
-      description: 'Create a card component in angular',
-      state: "false",
+      title:'Create a website CV in angular',
+      description:'Create a website CV in angular',
+      state:"false",
+    },
+    {
+      title:'Create a website CV in angular',
+      description:'Create a website CV in angular',
+      state:"false",
     },
   
     {

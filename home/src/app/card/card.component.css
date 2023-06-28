@@ -1,5 +1,7 @@
 
+
 .card{
+  align-items: center;
   margin-left: 50px;
   margin-right: 50px;
   background-color: blueviolet;
@@ -10,6 +12,7 @@
  width: 500px;
 
 }
+
 .cardStateDone{
 background-color: green;
 position: relative;
