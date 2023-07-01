@@ -1,0 +1,48 @@
+<div>
+    <ngb-carousel>
+        <ng-template ngbSlide >
+          <div class="carousel-captions">
+            <app-card class="card" [card]="allCards[0]"></app-card>
+        </div>
+        </ng-template>
+        <ng-template ngbSlide >
+          <div class="carousel-captions">
+            <app-card class="card" [card]="allCards[1]"></app-card>
+        </div>
+        </ng-template>
+        <ng-template ngbSlide >
+          <div class="carousel-captions">
+            <app-card class="card" [card]="allCards[2]">
+                
+            </app-card>
+        </div>
+        </ng-template>
+        <ng-template ngbSlide >
+          <div class="carousel-captions">
+            <app-card class="card" [card]="allCards[3]"></app-card>
+        </div>
+        </ng-template>
+        <ng-template ngbSlide >
+          <div class="carousel-captions">
+            <app-card class="card" [card]="allCards[4]"></app-card>
+        </div>
+        </ng-template>
+      </ngb-carousel>
+  <div class="btn-wrapper">
+
+
+
+    <button class="btn btn-menu" [class.active]="filter === 'all'" (click)="filter = 'all'">
+      All
+    </button>
+
+    <button class="btn btn-menu" [class.active]="filter === 'active'" (click)="filter = 'active'">
+      To Do
+    </button>
+
+    <button class="btn btn-menu" [class.active]="filter === 'done'" (click)="filter = 'done'">
+      Done
+    </button>
+  </div>
+</div>
+  
