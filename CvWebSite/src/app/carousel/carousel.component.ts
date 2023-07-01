@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-carousel',
+  templateUrl: './carousel.component.html',
+  styleUrls: ['./carousel.component.css']
+ 
 })
-export class AppComponent {
-  title = "Mon SiteWeb";
-
+export class CarouselComponent {
   filter: 'all' | 'active'| 'done' | 'Not started'= 'all';
 
   allCards = [
@@ -60,4 +60,7 @@ export class AppComponent {
 
     return undefined;
   }
+
+  images = [944, 1011, 984].map((n) => `https://picsum.photos/id/${n}/900/500`);
+
 }

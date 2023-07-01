@@ -1,0 +1,84 @@
+.card{
+  background-color: rgb(229, 255, 0);
+ 
+  padding: 50px;
+  align-items: center;
+  
+ 
+}
+
+.allCard{
+  background-color: blue;
+  display: flex;
+  
+  overflow-x: auto;
+  width: auto;
+
+  min-height: 750px;
+
+  align-items: center;
+
+
+}
+.title{
+ margin-top: 50px;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+}
+.colorBleuemarine{
+  background-color: #2f435e;
+}
+.colorBleuegris{
+  background-color: #44566c;
+}
+.colorblancassé{
+  background-color: #ececec
+}
+.colorgris{
+  background-color: #4b5e65;
+}
+
+.btn-wrapper {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+.active{
+  background-color: green;
+  color: white;
+}
+label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 1rem;
+}
+
+.lg-text-input {
+  min-width: 50px;
+  width: auto;
+  padding: 1rem;
+  border: 2px solid #000;
+  display: block;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+
+.btn-menu {
+  flex-basis: 32%;
+}
+
+.active {
+  background-color: green;
+  color: white;
+}
+
+
+
+
+    
+  
+  

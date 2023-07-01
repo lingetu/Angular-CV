@@ -1,0 +1,23 @@
+
+.card{
+    background-color: rgb(229, 255, 0);
+   
+    padding: 50px;
+    align-items: center;
+    
+   
+  }
+  
+  .allCard{
+    background-color: blue;
+    display: flex;
+    
+    overflow-x: auto;
+    width: auto;
+  
+    min-height: 750px;
+  
+    align-items: center;
+  
+  
+  }

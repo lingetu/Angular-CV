@@ -1,0 +1,128 @@
+.card{
+    background-color: rgb(229, 255, 0);
+   
+    padding: 50px;
+    align-items: center;
+    
+   
+  }
+  
+  .allCard{
+    background-color: blue;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    width: auto;
+  
+    min-height: 750px;
+  
+    align-items: center;
+  
+  
+  }
+  .title{
+   margin-top: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+  }
+  .colorBleuemarine{
+    background-color: #2f435e;
+  }
+  .colorBleuegris{
+    background-color: #44566c;
+  }
+  .colorblancassé{
+    background-color: #ececec
+  }
+  .colorgris{
+    background-color: #4b5e65;
+  }
+  
+  .btn-wrapper {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  
+  label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 1rem;
+  }
+  
+  .lg-text-input {
+    min-width: 50px;
+    width: auto;
+    padding: 1rem;
+    border: 2px solid #000;
+    display: block;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+  
+  
+  .btn-menu {
+    flex-basis: 32%;
+  }
+  
+  .active {
+    background-color: green;
+    color: white;
+  }
+  
+  ul {
+    padding-inline-start: 0;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  .carousel {
+    width: 500px;
+    overflow: hidden;
+    background-color: blue;
+    display: flex;
+   
+    width: auto;
+  
+    min-height: 750px;
+  
+    align-items: center;
+    
+  }
+  
+  .carousel-slides {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 300%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    float: left;
+    width: 33.33%;
+  }
+      
+  .prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+    
+    

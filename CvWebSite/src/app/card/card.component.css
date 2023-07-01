@@ -1,0 +1,55 @@
+
+
+.card{
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: blueviolet;
+  
+ 
+ height: 700px;
+
+ width: 500px;
+
+}
+
+.cardStateDone{
+background-color: green;
+position: relative;
+
+
+width: 100%;
+z-index: 5;
+
+display: block;
+}
+.cardStateDoing{
+background-color: orange;
+position: relative;
+
+
+width: 100%;
+z-index: 5;
+
+display: block;
+}
+.cardStateTodo{
+background-color: grey;
+position: relative;
+
+
+width: 100%;
+z-index: 5;
+
+display: block;
+}
+.btn-footer
+{
+margin-left: 50px;
+padding: 10px;
+  margin-top: 85%;
+}
+
+  
+  
+  

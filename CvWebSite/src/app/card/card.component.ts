@@ -1,15 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from "@angular/core";
+import { Card } from "../card";
+
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-card',
+  templateUrl: './card.component.html',
+  styleUrls: ['./card.component.css'],
+  
+  
 })
-export class AppComponent {
-  title = "Mon SiteWeb";
 
-  filter: 'all' | 'active'| 'done' | 'Not started'= 'all';
 
+
+export class CardComponent {
+
+
+  @Input() card!: Card;
+  @Output() remove = new EventEmitter<Card>();
+  
   allCards = [
     {
       title:'Create a website CV in angular',
@@ -38,26 +46,6 @@ export class AppComponent {
       state:"false",
     },
   ];
+ 
 
-
-
-  get card() {
-    if (this.filter == 'all') {
-      return this.allCards;
-    }
-    if(this.filter=="done")
-    {
-      return this.allCards.filter(item=>item.state=="true");
-    }
-    if(this.filter=="active")
-      {
-        return this.allCards.filter(item=>item.state=="doing");
-      }
-    if(this.filter=="Not started")
-      {
-        return this.allCards.filter(item=>item.state=="false");
-      }
-
-    return undefined;
-  }
 }
