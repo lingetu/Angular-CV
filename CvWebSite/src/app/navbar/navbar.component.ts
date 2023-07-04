@@ -14,12 +14,12 @@ export class NavbarComponent {
       link: 'home',
     },
     {
-      title: 'About',
-      link: 'about',
+      title: 'projets',
+      link: '/projet',
     },
     {
-      title: 'Contact',
-      link: 'contact',
+      title: 'Mon CV',
+      link: '/cv',
     },
   ];
 
