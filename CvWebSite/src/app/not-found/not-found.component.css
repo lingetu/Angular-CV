@@ -1,0 +1,67 @@
+
+.wrap-error {
+    background-color: #667bf2;
+    background-image: url(..\divers\fond.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: calc(var(--vh, 1vh) * 100);
+  }
+  .wrap-error h1 {
+    font-size: 6.875rem;
+    letter-spacing: -13px;
+    line-height: 1;
+    font-family: montserrat, sans-serif;
+  }
+  h1 span {
+    text-shadow: -8px 0 0 rgb(127, 128, 134);
+  }
+  .text-9xl {
+    font-size: 5.5rem;
+  }
+
+  .lil-container{
+    padding: 10px;
+  }
+  .footer{
+    background-color:#111924;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+  .lil-containerv2{
+    padding-right: 150px;
+    padding-left: 150px;
+    margin-top: 40px;
+    display: flex;
+   
+
+  }
+  .customlink{
+    color: white;
+    text-decoration: none;
+   
+  }
+
+
+  .hover-3 {
+    --b: 0.1em;   /* the thickness of the line */
+    --c: #3aa387; /* the color */
+    
+    color: white;
+    padding-block: var(--b);
+    background: 
+      linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+  }
+  .hover-3:hover {
+    --_p: 100%;
+    --_s: .3s;
+  }
