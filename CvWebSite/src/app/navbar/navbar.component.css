@@ -3,11 +3,14 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #000000;
+  
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 99999;
+  border-color: #f7f0cb;
+  border-width: 2px;
+  border-radius: 0px 0px 3px 3px;
 }
 
 li {
@@ -24,5 +27,6 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+  background-color: #f7f0cb;
+  color:#034f71;
 }

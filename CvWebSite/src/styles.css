@@ -12,3 +12,42 @@ body .slick-next {
     background: grey !important;
     z-index: 100;
 }
+.maincolor1{
+  color: #f7f0cb;
+  font-family: "Montserrat", sans-serif;
+}
+.maincolor2{
+  color:#034f71;
+  font-family: "Montserrat", sans-serif;
+}
+.maincolorbackground1{
+  background-color: #f7f0cb;
+}
+.maincolorbackground2{
+  background-color:#034f71
+}
+.text
+{
+  font-family: "Montserrat", sans-serif;
+}
+.soustitre{
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  
+}
+.centertext{
+  text-align: center;
+}
+.minititre{
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(3, 79, 113);
+}
+hr.blue-gradient{
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(3, 79, 113,0), rgba(3, 79, 113,0.75), rgba(3, 79, 113,0));
+}
