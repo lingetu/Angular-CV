@@ -1,5 +1,5 @@
 <div>
-    <ngb-carousel>
+    <ngb-carousel [interval]="10000" [pauseOnFocus]="true" >
         <ng-template ngbSlide >
           <div class="carousel-captions">
             <app-card class="card" [card]="allCards[0]"></app-card>

@@ -18,34 +18,7 @@ export class CardComponent {
   @Input() card!: Card;
   @Output() remove = new EventEmitter<Card>();
   
-  allCards = [
-    {
-      title:'Create a website CV in angular',
-      description:'Create a website CV in angular',
-      state:"false",
-    },
-    {
-      title:'Create a website CV in angular',
-      description:'Create a website CV in angular',
-      state:"false",
-    },
-    {
-      title:'Create a website CV in angular',
-      description:'Create a website CV in angular',
-      state:"false",
-    },
-    {
-      title:'Create a website CV in angular',
-      description:'Create a website CV in angular',
-      state:"false",
-    },
   
-    {
-      title:'Create a website CV in angular',
-      description:'Create a website CV in angular',
-      state:"false",
-    },
-  ];
  
 
 }

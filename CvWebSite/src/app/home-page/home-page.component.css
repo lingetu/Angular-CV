@@ -21,8 +21,8 @@
   
   }
   .title{
-   margin-top: 50px;
-    font-size: 2rem;
+   margin-top: 20px;
+    font-size: 2em;
     font-weight: bold;
     padding: 1rem;
     text-align: center;
@@ -81,54 +81,14 @@
     list-style: none;
   }
   
-  .carousel {
-    width: 500px;
-    overflow: hidden;
-    background-color: rgb(229, 255, 0);
-    display: flex;
-   
-    width: auto;
   
-    min-height: 750px;
-  
-    align-items: center;
-    
-  }
-  
-  .carousel-slides {
-    list-style-type: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    width: 300%;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .slide {
-    float: left;
-    width: 33.33%;
-  }
-      
-  .prev-button,
-.next-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.prev-button {
-  left: 10px;
-}
-
-.next-button {
-  right: 10px;
-}
 
 .sectioncontainer{
 display: flex;
-padding-top: 100px;
+padding-top: 50px;
 height: 100vh;
 width: 100%;
+
 
 
 
@@ -149,15 +109,68 @@ width: 100%;
     width: 50%;
   } 
   .title{
-  font-size: 100px;
+  font-size: 6vw;
   text-align: center;
   }
   .minititrelucasbondon{
-    font-size: 30px;
+    font-size: 3vw;
     position: absolute;
     margin-top: 0px;
     text-align: center;
     margin-left: 7%;
+
+  }
+  .footertitle
+  {
+    margin-top: 10px;
+    font-size: 2vw;
+    text-align: center;
+     flex-direction: row;
+    justify-self: space-between;
+    
+  }
+  .lil-containerv2{
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-top: 10px;
+    display: flex;
+    text-align: center;
+    justify-self: center;
+    width: 30vw;
+   
+
+  }
+  .customlink{
+    color: white;
+    text-decoration: none;
+   
+  }
+
+
+  .hover-3 {
+    --b: 0.1em;   /* the thickness of the line */
+    --c: #3aa387; /* the color */
+    
+    color: white;
+    padding-block: var(--b);
+    background: 
+      linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+  }
+  .hover-3:hover {
+    --_p: 100%;
+    --_s: .3s;
+  }
+  .footer{
+    height: 7vh;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    
 
   }
   

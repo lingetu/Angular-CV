@@ -11,6 +11,7 @@ ul {
   border-color: #f7f0cb;
   border-width: 2px;
   border-radius: 0px 0px 3px 3px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 }
 
 li {

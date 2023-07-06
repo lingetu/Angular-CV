@@ -12,14 +12,14 @@ export class CarouselComponent {
 
   allCards = [
     {
-      title:'Create a website CV in angular',
-      description:'Create a website CV in angular',
-      state:"false",
+      title:'Créer un siteweb CV',
+      description:'Ce projet consiste à créer un site web CV en utilisant Angular, il permet de présenter les compétences, les expériences et les formations que j’ai acquises durant mon et scolaire.',
+      state:"true",
     },
     {
       title:'Create a website CV in angular',
       description:'Create a website CV in angular',
-      state:"false",
+      state:"true",
     },
     {
       title:'Create a website CV in angular',

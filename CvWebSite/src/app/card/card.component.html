@@ -3,21 +3,32 @@
   
 <mat-card class="card maincolorbackground1">
     <mat-card-header>
-      <mat-card-title>{{card.title}}</mat-card-title>
+      <mat-card-title class="title">{{card.title}}</mat-card-title>
     </mat-card-header>
-    <mat-card-content>
-      <p>
+    <mat-card-content class="centertext">
+      <p class="text">
         {{card.description}}
         
       </p>
-    </mat-card-content>
-   <mat-card-footer>
-   
-   </mat-card-footer>
-   
     
+    </mat-card-content>
+   
+   <mat-card-footer ></mat-card-footer>
+    
+   
+   
+   <div *ngIf="card.state==='false'" class="cardStateTodo">
+
+   </div>
+   <div *ngIf="card.state==='doing'" class="cardStateDoing">
+
+   </div> 
+   <div *ngIf="card.state==='true'" class="cardStateDone">
+
+   </div>
   
 </mat-card>
+
 
 
 
