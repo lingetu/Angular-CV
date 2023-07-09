@@ -1,9 +1,33 @@
+
 <nav >
     <ul  class="alllink  maincolorbackground2">
-        <li *ngFor="let i of allLinks">
-          <a style=" color: #f7f0cb;
-          font-family: 'Montserrat', sans-serif;
-        ">{{i.title}}</a>
+        <li>
+          <a routerLink="" style="color: maincolor1;">
+
+            <fa-icon [icon]=faHome></fa-icon>
+           Home
+          </a>
+      
+
+        
+        </li>
+        <li>
+          <a routerLink="cv" style="color: maincolor1;">
+            <fa-icon [icon]=faUser></fa-icon>
+            CV
+          </a>  
+          </li>
+        <li>
+          <a routerLink="projet" style="color: maincolor1;">
+            <fa-icon [icon]=faProjectDiagram></fa-icon>
+          Project
+        </a>
+        </li>
+        <li>
+          <a routerLink="contact" style="color: maincolor1;">
+            <fa-icon [icon]=faEnvelope></fa-icon>
+          Contact
+          </a>
         </li>
       </ul>
     </nav>

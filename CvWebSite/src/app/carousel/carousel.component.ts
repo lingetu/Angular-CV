@@ -24,7 +24,7 @@ export class CarouselComponent {
     {
       title:'Create a website CV in angular',
       description:'Create a website CV in angular',
-      state:"false",
+      state:"active",
     },
     {
       title:'Create a website CV in angular',
@@ -42,18 +42,18 @@ export class CarouselComponent {
 
 
   get card() {
-    if (this.filter == 'all') {
+    if (this.filter === 'all') {
       return this.allCards;
     }
-    if(this.filter=="done")
+    if(this.filter==="done")
     {
       return this.allCards.filter(item=>item.state=="true");
     }
-    if(this.filter=="active")
+    if(this.filter==="active")
       {
-        return this.allCards.filter(item=>item.state=="doing");
+        return this.allCards.filter(item=>item.state=="active");
       }
-    if(this.filter=="Not started")
+    if(this.filter==="Not started")
       {
         return this.allCards.filter(item=>item.state=="false");
       }

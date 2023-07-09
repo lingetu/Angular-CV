@@ -1,5 +1,9 @@
 import { Component, Input, Output, EventEmitter } from "@angular/core";
-
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -7,20 +11,12 @@ import { Component, Input, Output, EventEmitter } from "@angular/core";
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  faCoffee = faCoffee;
+  faHome = faHome;
+  faUser = faUser;
+  faEnvelope = faEnvelope;
+  faProjectDiagram = faProjectDiagram;
 
-  allLinks = [
-    {
-      title: 'Home',
-      link: 'home',
-    },
-    {
-      title: 'projets',
-      link: '/projet',
-    },
-    {
-      title: 'Mon CV',
-      link: '/cv',
-    },
-  ];
+
 
 }

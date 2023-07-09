@@ -1,30 +1,8 @@
 <div>
     <ngb-carousel [interval]="10000" [pauseOnFocus]="true" >
-        <ng-template ngbSlide >
-          <div class="carousel-captions">
-            <app-card class="card" [card]="allCards[0]"></app-card>
-        </div>
-        </ng-template>
-        <ng-template ngbSlide >
-          <div class="carousel-captions">
-            <app-card class="card" [card]="allCards[1]"></app-card>
-        </div>
-        </ng-template>
-        <ng-template ngbSlide >
-          <div class="carousel-captions">
-            <app-card class="card" [card]="allCards[2]">
-                
-            </app-card>
-        </div>
-        </ng-template>
-        <ng-template ngbSlide >
-          <div class="carousel-captions">
-            <app-card class="card" [card]="allCards[3]"></app-card>
-        </div>
-        </ng-template>
-        <ng-template ngbSlide >
-          <div class="carousel-captions">
-            <app-card class="card" [card]="allCards[4]"></app-card>
+        <ng-template ngbSlide *ngFor="let i of card">
+          <div class="carousel-captions" >
+            <app-card class="card" [card]="i"></app-card>
         </div>
         </ng-template>
       </ngb-carousel>
@@ -36,8 +14,13 @@
       All
     </button>
 
+    <button class="btn btn-menu" [class.active]="filter === 'Not started'" (click)="filter = 'Not started'">
+      Not started
+    </button>
+
+
     <button class="btn btn-menu" [class.active]="filter === 'active'" (click)="filter = 'active'">
-      To Do
+      Doing
     </button>
 
     <button class="btn btn-menu" [class.active]="filter === 'done'" (click)="filter = 'done'">
