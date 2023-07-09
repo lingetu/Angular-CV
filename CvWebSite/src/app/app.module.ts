@@ -17,8 +17,12 @@ import { MatCardModule }  from '@angular/material/card';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './carousel/carousel.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel'
+import { ReactiveFormsModule } from '@angular/forms';  
 
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ContactFormComponent } from './contact-form/contact-form.component'
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 
@@ -34,6 +38,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
     CarouselComponent,
     CvComponent,
     ContactComponent,
+    ContactFormComponent,
     
   ],
   imports: [
@@ -43,6 +48,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
     AppRoutingModule,
     SlickCarouselModule,
     FontAwesomeModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     
    
 

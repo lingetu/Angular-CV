@@ -11,7 +11,6 @@ import { faProjectDiagram } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  faCoffee = faCoffee;
   faHome = faHome;
   faUser = faUser;
   faEnvelope = faEnvelope;
