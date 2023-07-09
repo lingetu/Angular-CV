@@ -125,33 +125,31 @@ width: 100%;
     margin-top: 10px;
     font-size: 2vw;
     text-align: center;
-     flex-direction: row;
-    justify-self: space-between;
+     margin-bottom:0 ;
+    
     
   }
   .lil-containerv2{
-    margin-right: 5vw;
-    margin-left: 5vw;
-    margin-top: 10px;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    margin-top: 20px;
     display: flex;
-    text-align: center;
-    justify-self: center;
-    width: 30vw;
-   
+    
+
 
   }
   .customlink{
-    color: white;
+    color:#f7f0cb;
     text-decoration: none;
-   
+    text-align: center;
   }
 
 
   .hover-3 {
     --b: 0.1em;   /* the thickness of the line */
-    --c: #3aa387; /* the color */
+    --c: #f7f0cb; /* the color */
     
-    color: white;
+    color: #f7f0cb;
     padding-block: var(--b);
     background: 
       linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
@@ -166,10 +164,13 @@ width: 100%;
   }
   .footer{
     height: 7vh;
-    width: 100%;
     bottom: 0;
+    left: 0;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+
+    
     
 
   }
