@@ -78,8 +78,8 @@ body::-webkit-scrollbar-thumb {
 }
 .fullpage{
   display: flex;
-  padding-top: 50px;
-  height: 100vh;
+  flex-direction: row;
+  height: 98vh;
   width: 100%;
 }
 .title{

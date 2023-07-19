@@ -1,0 +1,172 @@
+.card{
+  background-color: rgb(229, 255, 0);
+ 
+  padding: 50px;
+  align-items: center;
+  
+ 
+}
+
+.allCard{
+  background-color: blue;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: auto;
+  width: auto;
+
+  min-height: 750px;
+
+  align-items: center;
+
+
+}
+
+.colorBleuemarine{
+  background-color: #2f435e;
+}
+.colorBleuegris{
+  background-color: #44566c;
+}
+.colorblancassé{
+  background-color: #ececec
+}
+.colorgris{
+  background-color: #4b5e65;
+}
+
+.btn-wrapper {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 1rem;
+}
+
+.lg-text-input {
+  min-width: 50px;
+  width: auto;
+  padding: 1rem;
+  border: 2px solid #000;
+  display: block;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+
+.btn-menu {
+  flex-basis: 32%;
+}
+
+.active {
+  background-color: green;
+  color: white;
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+
+
+.sectioncontainer{
+display: flex;
+padding-top: 50px;
+height: 100vh;
+width: 100%;
+
+
+
+
+}
+.right
+{
+padding: 70px;
+text-align: justify;
+margin-top: 25%;
+width: 40%;
+
+}
+.left
+{
+  margin-left: 7%;
+  justify-self: center;
+  margin-top: 17vh;
+  width: 50%;
+} 
+.title{
+font-size: 6vw;
+text-align: center;
+}
+.minititrelucasbondon{
+  font-size: 3vw;
+  position: absolute;
+  margin-top: 0px;
+  text-align: center;
+  margin-left: 7%;
+
+}
+.footertitle
+{
+  margin-top: 10px;
+  font-size: 2vw;
+  text-align: center;
+   margin-bottom:0 ;
+  
+  
+}
+.lil-containerv2{
+  padding-right: 10vw;
+  padding-left: 10vw;
+  margin-top: 20px;
+  display: flex;
+  
+
+
+}
+.customlink{
+  color:#f7f0cb;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+.hover-3 {
+  --b: 0.1em;   /* the thickness of the line */
+  --c: #f7f0cb; /* the color */
+  
+  color: #f7f0cb;
+  padding-block: var(--b);
+  background: 
+    linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+}
+.hover-3:hover {
+  --_p: 100%;
+  --_s: .3s;
+}
+.footer{
+  height: 7vh;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  
+  
+
+}
+
+  
