@@ -3,8 +3,7 @@ import { FormBuilder} from '@angular/forms';
 import { OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
-const {google} = require('googleapis');
-const sheets = google.sheets('v4');
+
 
 @Component({
   selector: 'app-contact-form',
