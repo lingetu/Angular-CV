@@ -31,9 +31,30 @@
 
   }
 
-  .containerCV{
-    display: inline-block;
-    width: 60vw;
-    height: 80vh;
-    align-content: center;
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f5f7;
   }
+  
+  .iframe-container {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+     /* Pour maintenir le rapport d'aspect 16:9 (facultatif) */
+  }
+  
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Pour supprimer la bordure de l'iframe */
+  }
+  

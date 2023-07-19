@@ -1,12 +1,14 @@
-<html class="maincolorbackground1">
+
     <header>
         <app-navbar></app-navbar>
     </header>
-    <body class="maincolorbackground1 fullpage" style="padding-top: 150px;">
-        <div class="containerCV">
-            <iframe src="../../assets/CV Lucas -2.pdf" frameborder="0" ></iframe>
-        </div>
-    
-       
-    </body>
-</html>
+    <body>
+  <div class="iframe-container" id="myiframe">
+    <iframe src="../../assets/CV Lucas -2.pdf" ></iframe>
+  </div>
+</body>
+<script>
+    var iframe = document.getElementById("myiframe");
+    iframe.width = iframe.contentWindow.document.body.scrollWidth;
+    iframe.height = iframe.contentWindow.document.body.scrollHeight;
+ </script>
