@@ -1,0 +1,77 @@
+.lefter{
+    position: relative;
+    left: 0;
+    top: 0;
+    background-color: grey;
+    height: 100%;
+    width: 100px;
+   border-radius: 50px;
+
+}
+.leftertrue{
+    background-color: green;
+    position: relative;
+    top: 12.5%;
+    left: 3%;
+    height: 75%;
+    width: 10%;
+    max-width: 75px;
+   border-radius: 50px;
+   box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.5);
+}
+.lefterfalse{
+    background-color: grey;
+    position: relative;
+    top: 12.5%;
+    left: 3%;
+    height: 75%;
+    width: 10%;
+    max-width: 75px;
+   border-radius: 50px;
+   box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.5);
+
+}
+.lefteractive{
+    background-color: orange;
+    position: relative;
+    top: 12.5%;
+    left: 3%;
+   
+    height: 75%;
+    width: 10%;
+    max-width: 75px;
+   border-radius: 50px;
+   box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.5);
+
+}
+.titleleft{
+background-color: aqua;
+}
+
+
+
+.textright{
+   background-color: blueviolet;
+
+   
+
+}
+.right
+{
+    margin-right: 2%;
+    margin-left: 10%;
+    margin-top: 25%;
+    width: 50%;
+    text-align: justify;
+}
+.left
+  {
+
+    width: 30%;
+    min-width: 100px;
+    margin-left: 15%;
+    margin-top: 20%;
+    text-align: center;
+
+
+} 

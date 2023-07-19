@@ -1,0 +1,76 @@
+
+
+    <div *ngFor="let i of projet">
+        <section *ngIf="i.number%2==0" class=" fullpage maincolorbackground1">
+        
+            <div  *ngIf="i.state=='true'" class="leftertrue">
+
+            </div>
+            <div  *ngIf="i.state=='false'" class="lefterfalse">
+
+            </div>
+            <div  *ngIf="i.state=='active'" class="lefteractive">
+
+            </div>
+            <div class="left">
+              <div class="titleleft maincolor2">
+                {{i.title}}
+              </div>
+            </div>
+
+            <div class="right">
+              <div class="textright maincolor2">
+                {{i.description}}
+              </div>
+            </div>
+           
+            
+        </section>
+        <section *ngIf="i.number%2!=0" class="maincolorbackground2 fullpage">
+            <div  *ngIf="i.state=='true'" class="leftertrue">
+
+            </div>
+            <div  *ngIf="i.state=='false'" class="lefterfalse">
+
+            </div>
+            <div  *ngIf="i.state=='active'" class="lefteractive">
+
+            </div>
+            <div class="left">
+              <div class="titleleft maincolor2">
+                {{i.title}}
+              </div>
+            </div>
+
+            <div class="right">
+              <div class="textright maincolor2">
+                {{i.description}}
+              </div>
+            </div>
+        </section>
+        
+    </div>
+    <div class="btn-wrapper">
+
+
+
+        <button class="btn btn-menu" [class.active]="filter === 'all'" (click)="filter = 'all'">
+          All
+        </button>
+    
+        <button class="btn btn-menu" [class.active]="filter === 'Not started'" (click)="filter = 'Not started'">
+          Not started
+        </button>
+    
+    
+        <button class="btn btn-menu" [class.active]="filter === 'active'" (click)="filter = 'active'">
+          Doing
+        </button>
+    
+        <button class="btn btn-menu" [class.active]="filter === 'done'" (click)="filter = 'done'">
+          Done
+        </button>
+      </div>
+   
+
+

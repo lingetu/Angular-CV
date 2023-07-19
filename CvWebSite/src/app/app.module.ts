@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
@@ -18,10 +19,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './carousel/carousel.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel'
 import { ReactiveFormsModule } from '@angular/forms';  
+import {FormsModule } from '@angular/forms';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ContactFormComponent } from './contact-form/contact-form.component'
 import { HttpClientModule } from '@angular/common/http';
+import { ProjetcomponentComponent } from './projetcomponent/projetcomponent.component';
 
 
 
@@ -39,6 +42,9 @@ import { HttpClientModule } from '@angular/common/http';
     CvComponent,
     ContactComponent,
     ContactFormComponent,
+    ProjetcomponentComponent,
+    
+
     
   ],
   imports: [
@@ -50,6 +56,8 @@ import { HttpClientModule } from '@angular/common/http';
     FontAwesomeModule,
     ReactiveFormsModule,
     HttpClientModule,
+    FormsModule,
+    
     
    
 
@@ -59,6 +67,7 @@ import { HttpClientModule } from '@angular/common/http';
       {path: 'contact', component: ContactComponent},
       {path: 'cv', component: CvComponent},
       {path: '**', component: NotFoundComponent},
+      
 
     ])
   ],
