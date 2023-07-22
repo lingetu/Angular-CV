@@ -77,11 +77,11 @@
   
   
 
-.sectioncontainer{
-display: flex;
-padding-top: 50px;
-height: 100vh;
-width: 100%;
+  .sectioncontainer{
+    display: flex;
+    padding-top: 50px;
+    height: 100vh;
+    width: 100%;
 
 
 
@@ -168,5 +168,52 @@ width: 100%;
     
 
   }
+
+  @media (max-width: 800px) {
+    .sectioncontainer{
+      display: flex;
+      padding-top: 50px;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    
+  }
+  .right
+  {
+    padding: 70px;
+    text-align: center;
+    margin-top: 25%;
+    width: 100%;
+
+  
+  }
+  .left{
+    margin-right: 9%;
+    justify-self: center;
+    margin-top: 17vh;
+    width: 100%;
+    text-align: center;
+  }
+  .title{
+    font-size: 50px;
+    text-align: center;
+    }
+    .minititre{
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      
+    }
+    .soustitre{
+
+      font-family: "Montserrat", sans-serif;
+      font-size: 30px;
+      font-size-adjust: none;
+      font-weight: 600;
+      
+    }
+}
   
     

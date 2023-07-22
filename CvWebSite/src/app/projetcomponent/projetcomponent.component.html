@@ -12,30 +12,34 @@
             <div  *ngIf="i.state=='active'" class="lefteractive">
 
             </div>
-            <div class="left">
-              <div class="titleleft maincolor2">
-                {{i.title}}
+            <div class="responsive">
+              <div class="left">
+                <div class="titleleft maincolor2">
+                  {{i.title}}
+                </div>
+              </div>
+  
+              <div class="right">
+                <div class="textright maincolor2">
+                  {{i.description}}
+                </div>
               </div>
             </div>
-
-            <div class="right">
-              <div class="textright maincolor2">
-                {{i.description}}
-              </div>
-            </div>
+            
            
             
         </section>
         <section *ngIf="i.number%2!=0" class="maincolorbackground2 fullpage">
-            <div  *ngIf="i.state=='true'" class="leftertrue">
+          <div  *ngIf="i.state=='true'" class="leftertrue">
 
-            </div>
-            <div  *ngIf="i.state=='false'" class="lefterfalse">
+          </div>
+          <div  *ngIf="i.state=='false'" class="lefterfalse">
 
-            </div>
-            <div  *ngIf="i.state=='active'" class="lefteractive">
+          </div>
+          <div  *ngIf="i.state=='active'" class="lefteractive">
 
-            </div>
+          </div>
+          <div class="responsive">
             <div class="left">
               <div class="titleleft maincolor2">
                 {{i.title}}
@@ -47,6 +51,8 @@
                 {{i.description}}
               </div>
             </div>
+          </div>
+          
         </section>
         
     </div>

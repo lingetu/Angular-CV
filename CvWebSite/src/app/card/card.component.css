@@ -7,7 +7,7 @@
   padding: 50px;
   align-items: center;
   width: 500px;
-  margin-left: 50px;
+  
   margin-top: 50px;
   border-radius: 10px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
@@ -67,5 +67,19 @@ padding: 10px;
 }
 
   
+@media (max-width: 800px) {
+  .card{
+    align-items: center;
+   height: 700px;
+   background-color:#034f71;
+    padding: 50px;
+    align-items: center;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+    color: #f7f0cb;
+    font-family: "Montserrat", sans-serif; 
   
+  }
+}
   

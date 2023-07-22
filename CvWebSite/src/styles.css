@@ -42,11 +42,12 @@ body .slick-next {
   text-align: center;
 }
 .minititre{
+  font-size: calc(1em + 1vw);
   font-family: "Montserrat", sans-serif;
-  font-size: 2vw;
   font-weight: 600;
   
 }
+
 @media screen and (min-width: 1200px) {
   .minititre{
     font-family: "Montserrat", sans-serif;

@@ -46,12 +46,31 @@
 }
 .titleleft{
 background-color: aqua;
-}
+font-size: calc(1em + 1vw);
+font-family: "Montserrat", sans-serif;
+font-weight: 600;
+text-align: center;
+margin-left: 10%;
+margin-right: 10%;
+margin-top: 10%;
+margin-bottom: 10%;
+width: auto;
+    
+  }
 
 
 
 .textright{
    background-color: blueviolet;
+    font-size: calc(0.8em + 1vw);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+   
+   
 
    
 
@@ -62,16 +81,55 @@ background-color: aqua;
     margin-left: 10%;
     margin-top: 25%;
     width: 50%;
+    max-width: 80vw;
     text-align: justify;
+   
 }
 .left
   {
 
-    width: 30%;
+    width: auto;
+    max-width: 80vw;
     min-width: 100px;
     margin-left: 15%;
     margin-top: 20%;
-    text-align: center;
+    text-align: justify;
 
 
 } 
+.responsive{
+   display: flex;
+   flex-direction: row;
+   position: inherit;
+   width: 100%;
+}
+@media (max-width: 800px) {
+    .responsive{
+      display: flex;
+      padding-top: 50px;
+      height: 100vh;
+      width: 101%;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    
+  }
+  .right
+  {
+
+    text-align: center;
+    margin-top: 5%;
+    width: 100%;
+    justify-self: center;
+
+  
+  }
+  .left{
+    
+    justify-self: center;
+    margin-top: 10%;
+    width: auto;
+    text-align: center;
+  }
+  
+}
