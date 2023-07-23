@@ -91,7 +91,7 @@
 {
   padding: 70px;
   text-align: justify;
-  margin-top: 25%;
+  margin-top: 15%;
   width: 40%;
 
 }
@@ -184,7 +184,7 @@
   {
     padding: 70px;
     text-align: center;
-    margin-top: 25%;
+    margin-top: 10%;
     width: 100%;
 
   
@@ -209,7 +209,7 @@
     .soustitre{
 
       font-family: "Montserrat", sans-serif;
-      font-size: 30px;
+      font-size: calc(0.75em + 0.5vw);
       font-size-adjust: none;
       font-weight: 600;
       
