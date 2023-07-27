@@ -163,11 +163,23 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+  }
+  .containerimg{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: calc(40% - 200px);
+    top: 50%;
+    z-index: 0;
+    background-image: url("../../assets/reshot-illustration-computer-hardware-57VPF4G3QN.svg");
+    background-size: contain;
     
+    background-position: center;
+    border: #f7f0cb;
     
 
   }
+  
 
   @media (max-width: 800px) {
     .sectioncontainer{
@@ -179,6 +191,22 @@
       text-align: center;
       align-items: center;
     
+  }
+  .containerimg{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: calc(40% - 200px);
+    top: 50%;
+    z-index: 0;
+    background-image: url("../../assets/reshot-illustration-computer-hardware-57VPF4G3QN.svg");
+    background-size: contain;
+    
+    background-position: center;
+    border: #f7f0cb;
+    display: none;
+    mix-blend-mode: color-dodge;
+
   }
   .right
   {
@@ -212,6 +240,7 @@
       font-size: calc(0.75em + 0.5vw);
       font-size-adjust: none;
       font-weight: 600;
+      z-index: 50;
       
     }
 }

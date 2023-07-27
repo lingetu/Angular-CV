@@ -1,3 +1,24 @@
+<div class="btn-wrapper w3-center" >
+
+
+
+  <button class="btn " style="font-weight: 900; font-size: large;" [class.active]="filter === 'all'" (click)="filter = 'all'">
+    Tous
+  </button>
+
+  <button class="btn btn-menu" style="font-weight: 900; font-size: large;" [class.active]="filter === 'Not started'" (click)="filter = 'Not started'">
+    Non commencé
+  </button>
+
+
+  <button class="btn btn-menu" style="font-weight: 900; font-size: large;" [class.active]="filter === 'active'" (click)="filter = 'active'">
+    En cours 
+  </button>
+
+  <button class="btn btn-menu" style="font-weight: 900; font-size: large;" [class.active]="filter === 'done'" (click)="filter = 'done'">
+    Fait
+  </button>
+</div>
 <div>
     <ngb-carousel [interval]="10000" [pauseOnFocus]="true" >
         <ng-template ngbSlide *ngFor="let i of card">
@@ -6,26 +27,6 @@
         </div>
         </ng-template>
       </ngb-carousel>
-  <div class="btn-wrapper">
-
-
-
-    <button class="btn btn-menu" [class.active]="filter === 'all'" (click)="filter = 'all'">
-      All
-    </button>
-
-    <button class="btn btn-menu" [class.active]="filter === 'Not started'" (click)="filter = 'Not started'">
-      Not started
-    </button>
-
-
-    <button class="btn btn-menu" [class.active]="filter === 'active'" (click)="filter = 'active'">
-      Doing
-    </button>
-
-    <button class="btn btn-menu" [class.active]="filter === 'done'" (click)="filter = 'done'">
-      Done
-    </button>
-  </div>
+ 
 </div>
   

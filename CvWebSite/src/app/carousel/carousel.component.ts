@@ -43,6 +43,11 @@ export class CarouselComponent {
       description:'Le but serait uniquement d’améliorer mes compétences en Angular',
       state:"false",
     },
+    {
+      title:'Aucun projet en cours pour le moment',
+      description:'Ne vous en faites pas, je ne reste jamais sans rien faire !',
+      state:"active",
+    },
   ];
 
 
