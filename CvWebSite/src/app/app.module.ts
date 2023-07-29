@@ -25,6 +25,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ContactFormComponent } from './contact-form/contact-form.component'
 import { HttpClientModule } from '@angular/common/http';
 import { ProjetcomponentComponent } from './projetcomponent/projetcomponent.component';
+import { CarouselinteretComponent } from './carouselinteret/carouselinteret.component';
+import { CardinteretComponent } from './cardinteret/cardinteret.component';
 
 
 
@@ -43,6 +45,8 @@ import { ProjetcomponentComponent } from './projetcomponent/projetcomponent.comp
     ContactComponent,
     ContactFormComponent,
     ProjetcomponentComponent,
+    CarouselinteretComponent,
+    CardinteretComponent,
     
 
     
@@ -63,7 +67,6 @@ import { ProjetcomponentComponent } from './projetcomponent/projetcomponent.comp
 
     RouterModule.forRoot([
       {path: '', component: HomePageComponent},
-      {path: 'projet', component: ProjetPageComponent},
       {path: 'contact', component: ContactComponent},
       {path: 'cv', component: CvComponent},
       {path: '**', component: NotFoundComponent},

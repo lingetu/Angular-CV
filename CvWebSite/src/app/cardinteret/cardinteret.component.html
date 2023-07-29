@@ -1,0 +1,38 @@
+
+
+  
+<mat-card class="card grid-container maincolor1 ">
+  <div class="containerimg2" style="background-image: url({{cardinteret.url}}) ;">
+
+  </div>
+  <mat-card-header class="grid-header">
+    <mat-card-title class="title">{{cardinteret.title}}</mat-card-title>
+  </mat-card-header>
+  <div class="grid-padding"> </div>
+  <mat-card-content class="grid-text">
+  
+  {{cardinteret.description}}
+  </mat-card-content>
+ <div class="grid-paddingleft"> </div>
+ <mat-card-footer class="grid-footer">
+   <div *ngIf="cardinteret.state==='false'" class="cardStateTodo">
+
+ </div>
+ <div *ngIf="cardinteret.state==='true'" class="cardStateDone">
+  
+ </div>
+</mat-card-footer>
+   
+    
+   
+  
+  
+  
+</mat-card>
+
+
+
+
+
+    
+  

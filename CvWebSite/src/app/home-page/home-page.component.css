@@ -244,5 +244,37 @@
       
     }
 }
+.grid-containersection {
+  margin-top: 10vh;
+  display: grid;
+  grid-template-areas:
+    'header header header header textgras textgras'
+    'text text text text text text'
+    'text text text text text text';
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-text {
+  grid-area: text;
   
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+.grid-textgras {
+  grid-area: textgras;
+  text-align: left;
+  padding-top: 20px;
+  width: 100%;
+  height: 100%;
+  margin-top: 15vh;
+}
+.grid-header {
+  grid-area: header;
+  
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+}
     

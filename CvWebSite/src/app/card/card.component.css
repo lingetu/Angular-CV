@@ -25,11 +25,10 @@ align-items: center;
 margin-top: 600px;
 border-radius: 0px 0px 10px 10px;
 width: 100%;
+
 }
 .cardStateDoing{
 background-color: orange;
-
-
 display: block;
 position: absolute;
 height: 50px;
@@ -37,6 +36,7 @@ align-items: center;
 margin-top: 600px;
 border-radius: 0px 0px 10px 10px;
 width: 100%;
+
 }
 .cardStateTodo{
 background-color: grey;
@@ -47,6 +47,7 @@ align-items: center;
 margin-top: 600px;
 border-radius: 0px 0px 10px 10px;
 width: 100%;
+
 }
 .btn-footer
 {

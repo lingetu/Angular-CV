@@ -1,0 +1,28 @@
+<div class="btn-wrapper w3-center" >
+
+
+
+    <button class="btn " style="font-weight: 900; font-size: large;" [class.active]="filter === 'all'" (click)="filter = 'all'">
+      Tous
+    </button>
+  
+  
+  
+    <button class="btn btn-menu" style="font-weight: 900; font-size: large;" [class.active]="filter === 'Experience'" (click)="filter = 'Experience'">
+      Avec expérience
+    </button>
+  
+    <button class="btn btn-menu" style="font-weight: 900; font-size: large;" [class.active]="filter === 'No Experience'" (click)="filter = 'No Experience'">
+        Sans expérience
+    </button>
+  </div>
+  <div>
+      <ngb-carousel [interval]="10000" [pauseOnFocus]="true" >
+          <ng-template ngbSlide *ngFor="let i of interet">
+            <div class="carousel-captions" >
+              <app-cardinteret class="card" [cardinteret]="i"></app-cardinteret>
+          </div>
+          </ng-template>
+        </ngb-carousel>
+   
+  </div>
