@@ -33,3 +33,17 @@ li a:hover {
   color:#034f71;
 }
 
+.containerimg2{
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../../assets/iconlb.svg");
+  background-size: contain;
+  background-position: center;
+  border: #f7f0cb;
+  
+
+}
+
