@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "site-cv-392720": {
+      "hosting": {
+        "CvWebSite": [
+          "my-website-lucasbondon"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "site-cv-392720"
+  }
+}
