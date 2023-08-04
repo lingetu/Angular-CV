@@ -13,7 +13,7 @@ export class CarouselComponent {
   allCards = [
     {
       title:'Créer un siteweb CV',
-      description:'Ce projet consiste à créer un site web CV en utilisant Angular, il permet de présenter les compétences, les expériences et les formations que j’ai acquises durant mon parcours scolaire. J’ai utilisé Angular acr c’est un framework souvent utilisé dans les grands groupes, de plus il est très complet et m’a permis de découvrir le Front-end sous un autre angle qui est bien plus plaisant que de faire du HTML/CSS pur. ',
+      description:'Ce projet consiste à créer un site web CV en utilisant Angular, il permet de présenter les compétences, les expériences et les formations que j’ai acquises durant mon parcours scolaire. J’ai utilisé Angular car c’est un framework souvent utilisé dans les grands groupes, de plus il est très complet et m’a permis de découvrir le Front-end sous un autre angle qui est bien plus plaisant que de faire du HTML/CSS pur. ',
       state:"true",
     },
     {

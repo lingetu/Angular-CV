@@ -103,7 +103,7 @@
     width: 50%;
   } 
   .title{
-  font-size: 6vw;
+  font-size:calc(3em + 1vw);
   text-align: center;
   }
   .minititrelucasbondon{
@@ -117,7 +117,7 @@
   .footertitle
   {
     margin-top: 10px;
-    font-size: 2vw;
+    font-size: calc(15px+2vw );
     text-align: center;
      margin-bottom:0 ;
     
@@ -221,10 +221,6 @@
     width: 100%;
     text-align: center;
   }
-  .title{
-    font-size: 50px;
-    text-align: center;
-    }
     .minititre{
       font-family: "Montserrat", sans-serif;
       font-size: 20px;
@@ -241,11 +237,29 @@
       font-weight: 600;
       z-index: 50;
     }
+   
     
     
     
     
     
+}
+@media (max-width:600px) {
+  .minititre{
+      font-family: "Montserrat", sans-serif;
+      font-size: calc(15px + 0.2vw);
+      font-weight: 600;
+      height: auto;
+    }
+   .grid-containersection{
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    height: 100vh;
+    width: 100%;
+   }
+   
+      
 }
 
 .soustitre2{
@@ -287,7 +301,8 @@
     padding: 10px;
     height: auto;
     min-height: 98vh;
-    row-gap: 50px;
+    
+    
   }
   
 
@@ -311,6 +326,8 @@
 }
 
 .grid-textgras {
+  width: auto;
+  height: auto;
   grid-area: textgras;
   text-align: left;
   padding-top: 5%;
@@ -321,9 +338,11 @@
   
 }
 .grid-header {
+  width: auto;
+  height: auto;
   grid-area: header;
   padding: 5%;
-  min-width: 600px;
+ 
   max-width: 800px;
 }
      
