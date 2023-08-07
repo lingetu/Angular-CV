@@ -79,6 +79,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px; /* roundness of the scroll thumb */
   border: 2px solid whitesmoke; /* creates padding around scroll thumb */
 }
+
 .fullpage{
   display: flex;
   flex-direction: row;

@@ -17,14 +17,14 @@ export class CarouselComponent {
       state:"true",
     },
     {
-      title:'Faire un générateur de monde aléatoire en 2D en C# sur Unity',
-      description:'Je m’étais lancé dans ce projet, car j’avais envie de comprendre comment les jeux vidéo fonctionnent, j’ai donc commencé par faire un générateur de monde aléatoire en C# sur Unity. Ce projet m’a permis d’appliquer les connaissances de C# que j’ai acquises au cours de ma prépa, cela m’a permis de comprendre comment un jeu est construit. ',
+      title:'Un générateur de monde aléatoire sur Unity',
+      description:'J’avais envie de comprendre comment les jeux vidéo fonctionnent, j’ai donc commencé par faire un générateur de monde aléatoire en C# sur Unity. Ce projet m’a permis d’appliquer les connaissances de C# que j’ai acquises au cours de ma prépa, cela m’a permis de comprendre comment un jeu est construit. ',
       state:"true",
     },
    
     {
       title:'Application de détourage de forme en C#',
-      description:'C’était mon projet de fin de Peip (prépa intégrée polytech), c’était un réel défi, car je me suis retrouvé à appliquer pour la première toutes les théories que l’on voyait pendant les cours, plus particulièrement les séries de fourriers. De plus je reprenais le projet d’un ancien élève, j’ai donc dû comprendre son code et le modifier pour qu’il corresponde à mes besoins.',
+      description:' C’était un réel défi, car je me suis retrouvé à appliquer pour la première certaines théories vu en cours, plus particulièrement les séries de fouriers. De plus je reprenais le projet d’un ancien élève, j’ai donc dû comprendre son code et le modifier pour qu’il corresponde à mes besoins.',
       state:"true",
     },
     {
