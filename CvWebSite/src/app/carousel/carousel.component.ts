@@ -12,6 +12,11 @@ export class CarouselComponent {
 
   allCards = [
     {
+      title:'Créer un siteweb Randonnée',
+      description:'Ce projet était le sujet de mon stage de 3e année. J’avais pour objectif de créer un site de randonnées muni d’une carte interactive pour rechercher dynamiquement les randonnées. J’ai pour ce faire utilisé ReactJS/TailWindCSS. Cela m’as permis d’obtenir des compétence en React en plus d’angular et d’ajouter une corde à mon arc.',
+      state:"true",
+    },
+    {
       title:'Créer un siteweb CV',
       description:'Ce projet consiste à créer un site web CV en utilisant Angular, il permet de présenter les compétences, les expériences et les formations que j’ai acquises durant mon parcours scolaire. J’ai utilisé Angular car c’est un framework souvent utilisé dans les grands groupes, de plus il est très complet et m’a permis de découvrir le Front-end sous un autre angle qui est bien plus plaisant que de faire du HTML/CSS pur. ',
       state:"true",
@@ -44,8 +49,8 @@ export class CarouselComponent {
       state:"false",
     },
     {
-      title:'Aucun projet en cours pour le moment',
-      description:'Ne vous en faites pas, je ne reste jamais sans rien faire !',
+      title:'Un jeux vidéo vue du dessus en C++/Blueprint sur Unreal Engine',
+      description:'Ce jeu me permettrait de réaliser un rêve, créer mon propre jeux vidéo et donc pouvoir le modifié à ma guise. Pour ce faire je compte collaborer avec certains de mes camarades de promotion.',
       state:"active",
     },
   ];
