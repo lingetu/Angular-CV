@@ -49,7 +49,7 @@ export class CarouselComponent {
       state:"false",
     },
     {
-      title:'Un jeux vidéo vue du dessus en C++/Blueprint sur Unreal Engine',
+      title:'Un jeux vidéo vue du dessus en C++/Blueprint sur Unreal Engine 5',
       description:'Ce jeu me permettrait de réaliser un rêve, créer mon propre jeux vidéo et donc pouvoir le modifié à ma guise. Pour ce faire je compte collaborer avec certains de mes camarades de promotion.',
       state:"active",
     },
@@ -80,3 +80,4 @@ export class CarouselComponent {
   
 
 }
+ 
