@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "lucasbondon-website",
     "source": ".",
     "ignore": [
       "firebase.json",
